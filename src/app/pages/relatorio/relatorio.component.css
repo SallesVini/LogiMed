@@ -1,0 +1,94 @@
+/* Container principal ajustado para sidebar */
+:host {
+  display: block;
+  margin-left: 220px; /* largura da sidebar */
+  padding: 10px;
+}
+
+/* Grid dos cards: cada linha com 3 cards */
+.cards-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* responsivo: quebra linha em telas pequenas */
+}
+
+/* Estilo geral dos cards */
+.card-stats {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  flex: 1; /* cards ocupam mesma largura dentro do row */
+  max-width: 31%; /* até 3 cards por linha */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-stats:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Cabeçalho do card */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-header i {
+  font-size: 1.5rem;
+}
+
+/* Valor principal */
+.card-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+/* Texto secundário */
+.card-subtext {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Cores de status */
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .card-stats {
+    max-width: 48%; /* 2 cards por linha em telas médias */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-stats {
+    max-width: 100%; /* 1 card por linha em telas pequenas */
+  }
+}

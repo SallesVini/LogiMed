@@ -1,0 +1,111 @@
+<!-- Sidebar -->
+<app-menu-lateral></app-menu-lateral>
+
+<!-- Cards de Entradas -->
+<div class="d-flex justify-content-between mb-2">
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Entradas Hoje</h5>
+      <i class="bi bi-calendar-day fs-3 text-primary"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ entradasHoje }}</div>
+    <div class="card-subtext text-success">
+      <i class="bi bi-arrow-up"></i> +15% em relação a ontem
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Entradas Semana</h5>
+      <i class="bi bi-calendar-week fs-3 text-warning"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ entradasSemana }}</div>
+    <div class="card-subtext text-success">
+      <i class="bi bi-arrow-up"></i> +8% em relação à semana passada
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Entradas Mês</h5>
+      <i class="bi bi-calendar fs-3 text-danger"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ entradasMes | number:'1.0-0' }}</div>
+    <div class="card-subtext text-success">
+      <i class="bi bi-arrow-up"></i> +12% em relação ao mês passado
+    </div>
+  </div>
+</div>
+
+<!-- Cards de Agendamentos -->
+<div class="d-flex justify-content-between mb-2">
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Agendados Hoje</h5>
+      <i class="bi bi-clock fs-3 text-primary"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ agendadosHoje }}</div>
+    <div class="card-subtext text-info">
+      Próximos horários do dia
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Agendados Semana</h5>
+      <i class="bi bi-calendar-week fs-3 text-warning"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ agendadosSemana }}</div>
+    <div class="card-subtext text-info">
+      Próximos 7 dias
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Agendados Mês</h5>
+      <i class="bi bi-calendar fs-3 text-danger"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ agendadosMes }}</div>
+    <div class="card-subtext text-info">
+      Próximos 30 dias
+    </div>
+  </div>
+</div>
+
+<!-- Cards de Cancelados -->
+<div class="d-flex justify-content-between mb-4">
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Cancelados Hoje</h5>
+      <i class="bi bi-x-circle fs-3 text-danger"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ canceladosHoje }}</div>
+    <div class="card-subtext text-danger">
+      Cancelamentos do dia
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Cancelados Semana</h5>
+      <i class="bi bi-x-circle fs-3 text-danger"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ canceladosSemana }}</div>
+    <div class="card-subtext text-danger">
+      Cancelamentos nos últimos 7 dias
+    </div>
+  </div>
+
+  <div class="card-stats flex-fill mx-2 shadow-sm p-3 rounded bg-white">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Cancelados Mês</h5>
+      <i class="bi bi-x-circle fs-3 text-danger"></i>
+    </div>
+    <div class="card-value fs-3 fw-bold">{{ canceladosMes }}</div>
+    <div class="card-subtext text-danger">
+      Cancelamentos nos últimos 30 dias
+    </div>
+  </div>
+</div>
+

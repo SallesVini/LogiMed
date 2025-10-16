@@ -1,0 +1,54 @@
+.content-box {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 220px;
+    margin-bottom: 20px; /* espaço entre a tabela e o footer */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Células da tabela centralizadas */
+.table th, .table td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 6px 8px; /* reduz o espaço interno */
+  white-space: nowrap; /* evita quebra de texto */
+}
+
+.table th {
+  font-weight: 550;
+}
+
+.table td {
+    cursor: pointer;
+}
+
+/* Scroll interno da tabela */
+.table-scroll {
+    max-height: 300px; /* ou outro valor que quiser */
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-scroll table {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-warning {
+    margin-right: 4px;
+}

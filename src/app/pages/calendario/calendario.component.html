@@ -1,0 +1,44 @@
+<!-- Sidebar -->
+<app-menu-lateral></app-menu-lateral>
+
+<div class="container mt-4">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+
+    <button class="btn btn-outline-primary btn-sm" (click)="mesAnterior()">
+        Anterior
+    </button>
+
+    <h5>{{ nomeMes }} de {{ ano }}</h5>
+
+    <button class="btn btn-outline-primary btn-sm" (click)="proximoMes()">
+        Próximo
+    </button>
+  </div>
+
+  <div class="table-responsive">
+    
+    <table class="table table-bordered text-center">
+      <thead class="table-dark">
+        <tr>
+          <th *ngFor="let dia of diasSemana">{{ dia }}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let semana of semanas">
+          <!-- ngFor - para percorrer os dias do mes -->
+          <!-- class binding condicional - para pegar só os dias que tem agendamento e colocar cor -->
+          <td 
+              *ngFor="let dia of semana" 
+              [ngClass]="{'bg-dark text-white': ehHoje(dia), 'bg-success': temEntrega(dia)}"
+            >
+            {{ dia || '' }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

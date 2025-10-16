@@ -1,64 +1,27 @@
-### LogiMed
+# ParkHub
 
-Sistema de Agendamento e Entrega de Medicamentos, desenvolvido em **Angular**.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
----
+## Development server
 
-## 1. Pré-requisitos
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Antes de instalar o projeto, verifique se você tem instalado:
+## Code scaffolding
 
-- [Node.js](https://nodejs.org/)
-- [Angular CLI](https://angular.io/cli) (versão 14)
-- [npm](https://www.npmjs.com/) (geralmente vem com Node.js)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
----
+## Build
 
-## 2. Instalação do projeto
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-1. Clone o repositório:
+## Running unit tests
 
-```bash
-git clone https://github.com/seu-usuario/LogiMed.git
-```
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running end-to-end tests
 
-## 3. Acesse a pasta do projeto:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-```bash
-cd LogiMed
-```
+## Further help
 
-
-## 4. Instale as dependências:
-
-```bash
-npm install
-```
-
-
-## 5. Executando o projeto:
-Para iniciar o servidor de desenvolvimento, use:
-
-```bash
-ng serve
-```
-O projeto estará disponível em: http://localhost:4200
-
-
-## 6. Estrutura do Projeto
-
-O projeto está organizado da seguinte forma dentro da pasta `src/app/`:
-
-- `components/` → Contém **componentes reutilizáveis** que podem ser usados em várias partes do sistema (navbar, footer, etc.).  
-- `pages/` → Contém as **páginas principais** do sistema (como Home, agenda, relatorio, etc.).  
-- `services/` → Contém os **serviços Angular**, responsáveis por fazer a comunicação com APIs ou gerenciar dados internos.  
-- `layout/` → Controla a **estrutura principal da aplicação**.
-
-
-## 7. Tecnologias utilizadas:
-Angular<br>
-TypeScript<br>
-HTML / CSS / Bootstrap 5
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

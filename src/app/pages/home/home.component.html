@@ -1,0 +1,108 @@
+<!-- Sidebar -->
+<app-menu-lateral></app-menu-lateral>
+
+
+<!-- Formulário de controle de carros -->
+<div class="content-box">
+  <div class="d-flex justify-content-between align-items-center">
+    <h5 class="fw-bold mb-0">Entrada de Medicamento</h5>
+    <button 
+      class="btn btn-primary" 
+      data-bs-toggle="modal" 
+      data-bs-target="#cadastroMedicamentoModal"
+    >
+      <i class="bi bi-plus-lg me-1"></i> 
+      Novo
+    </button>
+  </div>
+
+  <div class="table-scroll mt-3">
+    <table class="table table-bordered table-hover align-middle">
+      <thead>
+        <tr>
+          <th>Data de Entrada</th>
+          <th>Hora</th>
+          <th>Transportadora</th>
+          <th>Motorista</th>
+          <th>Nota Fiscal</th>
+          <th>Código do Medicamento</th>
+          <th>Nome do Medicamento</th>
+          <th>Quantidade Recebida</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Exemplo de linhas -->
+        <tr>
+          <td>15/10/2025</td>
+          <td>08:45</td>
+          <td>TransLog</td>
+          <td>João Silva</td>
+          <td>NF-45876</td>
+          <td>MED-001</td>
+          <td>Paracetamol 500mg</td>
+          <td>2.000</td>
+          <td>
+            <span class="badge bg-warning text-dark">Pendente</span>
+          </td>
+          <td>
+            <button class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-success btn-sm"><i class="bi bi-check2-circle"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  
+  <!-- Modal de cadastro de medicamento -->
+  <div class="modal fade" id="cadastroMedicamentoModal" tabindex="-1" aria-labelledby="cadastroMedicamentoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3" id="cadastroMedicamentoModalLabel">Cadastrar Medicamento</h5>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="transportadora" class="form-label">Transportadora</label>
+              <input type="text" class="form-control" id="transportadora" placeholder="Ex: TransLog" required>
+            </div>
+            <div class="col-md-6">
+              <label for="motorista" class="form-label">Motorista</label>
+              <input type="text" class="form-control" id="motorista" placeholder="Ex: João Silva" required>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="notaFiscal" class="form-label">Nota Fiscal</label>
+              <input type="text" class="form-control" id="notaFiscal" placeholder="Ex: NF-45876" required>
+            </div>
+            <div class="col-md-4">
+              <label for="codigoMedicamento" class="form-label">Código do Medicamento</label>
+              <input type="text" class="form-control" id="codigoMedicamento" placeholder="Ex: MED-001" required>
+            </div>
+            <div class="col-md-4">
+              <label for="nomeMedicamento" class="form-label">Nome do Medicamento</label>
+              <input type="text" class="form-control" id="nomeMedicamento" placeholder="Ex: Paracetamol 500mg" required>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <label for="quantidadeRecebida" class="form-label">Quantidade Recebida</label>
+              <input type="number" class="form-control" id="quantidadeRecebida" placeholder="Ex: 2000" required>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-success"><i class="bi bi-save"></i> Salvar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i> Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,20 @@
+<div class="sidebar">
+    <div>
+      <div class="profile mb-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User">
+        <h6 class="fw-bold mb-0">Usuário</h6>
+      </div>
+
+      <div class="menu">
+        <p>{{ data_atual | date:'dd/MM/yyyy HH:mm' }}</p>
+        <hr>
+        <a routerLink="/home">Medicamentos</a>
+        <a routerLink="#">Configurações</a>
+        <a routerLink="">Sair</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <i class="bi bi-capsule"></i> LogiMed
+    </div>
+</div>

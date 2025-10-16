@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  margin-left: 210px; /* largura do sidebar */
+  padding: 20px;
+}
+
+.calendar-container {
+  max-width: 900px;
+  margin: auto;
+}

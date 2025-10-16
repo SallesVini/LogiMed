@@ -1,0 +1,13 @@
+.login-card {
+  max-width: 470px; /* controla o tamanho máximo */
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* centralização na tela */
+  margin: 110px auto; /* margem superior/inferior + auto lateral */
+  display: block; /* necessário para o margin auto horizontal funcionar */
+}
+.login-card img {
+  width: 100px;
+}
